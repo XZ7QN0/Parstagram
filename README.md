@@ -2,7 +2,7 @@
 
 This is an Instagram clone with a custom Parse backend that allows a user to post photos and view a global photos feed.
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## User Stories
 
@@ -21,6 +21,10 @@ The following **bonus** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of logging in to Parstagram and viewing the feed:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/vvbgdup.gif' title='Parstagram Login Walkthrough' width='250px' alt='Parstagram Login Walkthrough' />
+
+Here's a walkthrough of posting in Parstagram:
+
+<img src='https://imgur.com/iz2ky3R.gif' title='Parstagram Login Walkthrough' width='250px' alt='Parstagram Login Walkthrough' />

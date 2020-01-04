@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://safe-brook-08675.herokuapp.com/parse"
             })
         )
-        
+
         return true
     }
 

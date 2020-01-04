@@ -17,6 +17,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
     }
     
     @IBAction func onSubmitButton(_ sender: Any) {
@@ -35,7 +36,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                 self.dismiss(animated: true, completion: nil)
                 print("Post was saved")
             } else {
-                print("There was an error in saving the post: \(error)")
+                print("There was an error in saving the post: \(String(describing: error))")
             }
         }
     }
@@ -58,7 +59,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let image = info[.editedImage] as! UIImage
         
         let size = CGSize(width: 300, height: 300)
-        let scaledImage = image.af_imageScaled(to: size)
+        let scaledImage = image.af_imageAspectScaled(toFill: size)
         
         imageView.image = scaledImage
         

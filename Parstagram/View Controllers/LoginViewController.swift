@@ -16,8 +16,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
     }
-    
 
     @IBAction func onSignIn(_ sender: Any) {
         let username = usernameField.text!
@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
             if user != nil {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil )
             } else {
-                print("Login Error: \(error?.localizedDescription)")
+                print("Login Error: \(String(describing: error?.localizedDescription))")
             }
         }
     }
@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
             if success {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
-                print("Signup Error: \(error?.localizedDescription)")
+                print("Signup Error: \(String(describing: error?.localizedDescription))")
             }
         }
 
